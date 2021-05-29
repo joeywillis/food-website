@@ -536,7 +536,8 @@ body {
   background-color: #eeeeee;
   margin-top: -20px;
   transition: all 1s ease-out;
-  overflow: hidden;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .container {
