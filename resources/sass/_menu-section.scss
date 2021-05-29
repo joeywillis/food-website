@@ -1,0 +1,60 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    transform: scale(.7);
+    :hover{
+        transform: scale(1.1);
+    }
+}
+
+.breakfast-icon, 
+.lunch-icon,
+.dinner-icon {
+    cursor: pointer;
+}
+
+.menu-grid {
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8,
+    .item9,
+    .item10,
+    .item11,
+    .item12,
+    .item13 {
+        display: none;
+        
+    }
+}
+
+.breakfast-icon p.breakfast {
+    border-bottom: solid 2px $dark-gray;
+}
+
+.lunch-icon p.lunch {
+    border-bottom: solid 2px $dark-gray;
+}
+
+.dinner-icon p.dinner {
+    border-bottom: solid 2px $dark-gray;
+}
+
+@media screen and (min-width:700px) {
+    .menu-icons {
+        transform: scale(1);
+}
+}

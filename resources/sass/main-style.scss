@@ -1,0 +1,29 @@
+@import 'header', 'variables', 'font-type', 'showcase', 'menu-section', 'breakfast-menu', 'lunch-menu', 'dinner-menu';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $dark-gray;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $off-white;
+    margin-top: -20px;
+    transition: all 1s ease-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px 0 20px;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin: 20px 100px 0 100px;
+    }
+    
+} 

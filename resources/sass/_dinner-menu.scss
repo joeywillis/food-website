@@ -1,0 +1,111 @@
+@import 'variables';
+
+
+.menu-grid.dinner {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+    min-height: 450px;
+    margin: 20px 0 50px;
+    padding: 20px;
+    background-color: $primary-color;
+    border-radius: 24px;
+    box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: .4);
+    grid-template-areas: 
+        "item9"
+        "item10"
+        "item11"
+        "item12"
+        "item13";
+    .item9,
+    .item10,
+    .item11,
+    .item12,
+    .item13 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $off-white;
+        border-radius: 24px;
+    }
+    
+    
+    .item9 {
+        grid-area: item9;
+    }
+    
+    .item10 {
+        grid-area: item10;
+        p {
+            display: none;
+            font-size: 1rem;
+            width: 40%;
+        }
+        
+    }
+    
+    .item11 {
+        grid-area: item11;
+    }
+    
+    .item12 {
+        grid-area: item12;
+    }
+
+    .item13 {
+        grid-area: item13;
+    }
+    .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    :hover{
+        transform: scale(1.01);
+    }
+}
+@media screen and (min-width: 500px) {
+    .menu-grid.dinner {
+        grid-template-areas: 
+        "item9 item11"
+        "item10 item10"
+        "item12 item13";
+        .circle {
+            height: 75px;
+            width: 75px;
+        }
+    .item9,
+    .item10,
+    .item11,
+    .item12,
+    .item13 {
+        flex-direction: row;
+    }
+    .circle {
+        height: 100px;
+        width: 100px;
+    }
+    .item10 p {
+        display: block;
+    }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .menu-grid.menu-grid.dinner {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "item10 item10 item9"
+        "item11 item12 item13";
+    .item9,
+    .item10,
+    .item11,
+    .item12,
+    .item13 {
+        flex-direction: row;
+    } 
+    }   
+}
