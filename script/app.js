@@ -14,6 +14,7 @@ const closeMenu = document.querySelector('.close-menu')
 openMenu.addEventListener('click', () => {
     openMenu.classList.toggle('active');
     closeMenu.classList.toggle('active');
+    document.querySelector('#wrapper').classList.toggle('active');
     document.querySelector('.main-nav').classList.toggle('active');
 
 });
@@ -21,7 +22,7 @@ openMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     openMenu.classList.toggle('active');
     closeMenu.classList.toggle('active');
-    document.querySelector('body').classList.toggle('active');
+    document.querySelector('#wrapper').classList.toggle('active');
     document.querySelector('.main-nav').classList.toggle('active');
 
 });
